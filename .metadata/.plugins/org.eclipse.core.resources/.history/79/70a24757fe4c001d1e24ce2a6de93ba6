@@ -1,0 +1,61 @@
+package com.example.demo.model;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "attraction")
+public class Attraction {
+	
+	@Id
+	private String id;
+	
+	private String AttractionName;
+	
+	private String AttractionDescription;
+	
+	private String AttractionState;
+	
+	private String AttractionCity;
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getAttractionName() {
+		return AttractionName;
+	}
+
+	public void setAttractionName(String attractionName) {
+		AttractionName = attractionName;
+	}
+
+	public String getAttractionDescription() {
+		return AttractionDescription;
+	}
+
+	public void setAttractionDescription(String attractionDescription) {
+		AttractionDescription = attractionDescription;
+	}
+
+	public String getAttractionState() {
+		return AttractionState;
+	}
+
+	public void setAttractionState(String attractionState) {
+		AttractionState = attractionState;
+	}
+
+	public String getAttractionCity() {
+		return AttractionCity;
+	}
+
+	public void setAttractionCity(String attractionCity) {
+		AttractionCity = attractionCity;
+	}
+	
+
+}

@@ -1,0 +1,20 @@
+package com.example.demo;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "attraction")
+public class Attraction {
+	
+	@Id
+	private String id;
+	
+	private String id;
+	
+	private String id;
+	
+	private int id;
+	
+	private String id;
+
+}
